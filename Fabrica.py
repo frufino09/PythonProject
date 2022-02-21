@@ -14,9 +14,13 @@ class Fabrica():
             suma += proveedor.precio_unidad
         promedio = suma / list.count()
         return promedio
-    #
-    # def mostrar_nombreprovesor_menorprecio:
-    #     primerProveedor = list.index(list, 0,0,1)
-    #     nombre = primerProveedor
-    #     for nombre in list:
-    #         menor =
+
+    def mostrar_nombreprovesor_menorprecio(self):
+        menor_precio = 9999999999
+        nombre = ""
+        for proveedor in list:
+            if menor_precio > proveedor.precio_unidad:
+                menor_precio = proveedor.precio_unidad
+                nombre = proveedor.nombre
+
+        return nombre
