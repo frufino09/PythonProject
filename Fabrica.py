@@ -22,5 +22,4 @@ class Fabrica():
             if menor_precio > proveedor.precio_unidad:
                 menor_precio = proveedor.precio_unidad
                 nombre = proveedor.nombre
-
         return nombre
