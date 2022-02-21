@@ -3,10 +3,10 @@ import Proveedor
 class Fabrica():
 
     def __init__(self):
-        list= []
-        list.append(Proveedor("Emil",12))
-        list.append(Proveedor("juanito",15))
-        list.append(Proveedor("pablito",10))
+        list = []
+        list.append(Proveedor("Emil", 12))
+        list.append(Proveedor("juanito", 15))
+        list.append(Proveedor("pablito", 10))
 
     def mostrar_precio_promedio(self):
         suma = 0
