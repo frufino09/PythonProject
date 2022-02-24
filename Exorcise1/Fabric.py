@@ -2,7 +2,6 @@ from Provider import Provider
 
 
 class Fabric:
-
     def __init__(self):
         self.provider_list = [
             Provider("Emil", 12),

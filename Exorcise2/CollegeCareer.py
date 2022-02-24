@@ -2,11 +2,10 @@ from Student import Student
 
 
 class CollegeCareer:
-
     def __init__(self):
         self.students_list = [
             Student("II2114", "Juanito", 9.56, "Masculine", True),
-            Student("BC3665", "Andrea", 6.70, "Feminine", False),
+            Student("BC7865", "Andrea", 6.70, "Feminine", False),
             Student("HG4112", "Pablo", 8.50, "Masculine", False),
             Student("PO8782", "Alejandra", 5.20, "Feminine", True)
         ]
@@ -36,7 +35,7 @@ class CollegeCareer:
         for student in self.students_list:
             if student.sex == "Feminine":
                 list_female.append(student.average)
-        return list_female.sort(reversed=True)
+        return list_female[::-1]
 
     def total_male_group(self, group_number):
         count_male = 0
@@ -44,3 +43,7 @@ class CollegeCareer:
             if group_number in student.code and student.sex == "Masculine":
                 count_male += 1
         return count_male
+
+    @staticmethod
+    def method():
+        return 5 + 6
