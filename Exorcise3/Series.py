@@ -27,5 +27,3 @@ class Series:
 
     def list_of_players_of_the_winning_team(self):
         pass
-
-
