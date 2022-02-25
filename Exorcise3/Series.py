@@ -1,4 +1,5 @@
 from Player import Player
+from Equipment import Equipment
 
 
 class Series:
@@ -7,6 +8,7 @@ class Series:
             Player("Juan", 12, 5, 3, 6, 2, 1),
             Player("Carlos", 56, 7, 8, 2, 5, 3),
             Player("Pablo", 10, 9, 1, 11, 23, 8)
+
         ]
 
     def name_player_more_batted(self):
