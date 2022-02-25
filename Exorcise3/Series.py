@@ -7,8 +7,9 @@ class Series:
         self.player_list = [
             Player("Juan", 12, 5, 3, 6, 2, 1),
             Player("Carlos", 56, 7, 8, 2, 5, 3),
-            Player("Pablo", 10, 9, 1, 11, 23, 8)
-
+            Player("Pablo", 10, 9, 1, 11, 23, 8),
+            Equipment(13, 5, 10),
+            Equipment(15, 7, 20)
         ]
 
     def name_player_more_batted(self):
@@ -28,4 +29,10 @@ class Series:
         return data_player
 
     def list_of_players_of_the_winning_team(self):
-        pass
+        list_team_winner = []
+        limit_winner = 99999
+        for player in self.player_list:
+            if limit_winner > player.cant_game_winner:
+                limit_winner = player.cant_game_winner
+                list_team_winner.append(player)
+
