@@ -1,6 +1,6 @@
 class Player:
-    def __int__(self, nombre, num, batted, hits, double, triple, homeruns):
-        self.nombre = nombre
+    def __init__(self, name, num, batted, hits, double, triple, homeruns):
+        self.name = name
         self.num = num
         self.batted = batted
         self.hits = hits
