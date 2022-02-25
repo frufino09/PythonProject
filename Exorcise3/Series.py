@@ -29,10 +29,9 @@ class Series:
         return data_player
 
     def list_of_players_of_the_winning_team(self):
-        list_team_winner = []
+        list_name_player = []
         limit_winner = 99999
         for player in self.player_list:
             if limit_winner > player.cant_game_winner:
                 limit_winner = player.cant_game_winner
-                list_team_winner.append(player)
-
+                list_name_player.append(player)
